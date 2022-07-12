@@ -37,7 +37,7 @@ In the above example we have a dictionary in a dictionary with `first-name` and 
 
 Now you are given the function like the below. Fill this function with the necessary code.
 
-This function has to fill in the dictionary with the acquired input and return to the function caller which inturn will print the received dictionary.  
+This function has to fill in the dictionary with the acquired input and return to the function caller which inturn will print the received dictionary.
 
 This function has to return a dictionary with all your details.
 Make sure you fill in the right details.
@@ -45,8 +45,19 @@ Make sure you fill in the right details.
 '''
 
 def my_details():
-  """Return a dictionary with your details in the format as specified in the above instructions"""
-  pass
+  d={}
+  d["Name"]={}
+  list1=["First Name","Second Name"]
+  for i in list1:
+    key=i
+    value=input(f"Enter the {key}: ")
+    d["Name"].update({key:value})
+  lst=["Roll Number","Branch","Specialization","Email ID","Moodle ID","GitHub ID","Replit ID","Semester","Year(1-4)"]
+  for ele in lst:
+      key=ele
+      value=input(f"Enter the {key} : ")
+      d.update({key:value})
+  return d
 
 
 # now call your function
@@ -56,4 +67,4 @@ print(dt)
 
 # Once you complete, no need to submit.
 # The changes will be automatically saved.
-# Wish you happy coding!!!
+# Wish you happy coding!!!=
